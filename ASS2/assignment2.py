@@ -4,10 +4,6 @@ print("Liquid Resistor test")
 print("We will create a new data set for each concentration of salt.")
 print("Make sure to start the first cycle before adding any salt!")
 print("Please Begin Your Experiment by placing two Electrodes Into a Cup of a Distilled Water")
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
 print("\n\n")
 
 # Test scope and size settings
@@ -20,7 +16,6 @@ sampleTrialNumber = int(input("Enter a number of Trials (Measured concentration 
 sampleNumberPerTrial = int(input("Enetr number of sample's per each Trial: ")) # To manipulate data sample's size
 dataSetIndex = 1    # Reset data set counter
 dataSubSetIndex = 1 # Reset sample size counter 
-
 thefile = open('Data.txt', 'w') # Creating/rewriting a new file
 
 # Function that scan Serial
@@ -39,7 +34,7 @@ def scan(): # Serial sacn function prototype
     else: # In case we recieved partial or broken bit date over Serial communication port
         scan() # Go back and sick next valid data scan
 # The end of scan function
-#
+
 # Programm execution routine         
 for y in range (0, sampleTrialNumber): # Reapeat for number of trials  
     print("\n") # Prints empty space before each data trial
@@ -57,14 +52,6 @@ sampleTrialNumber = 1 # Re-set trial  counter
 thefile.close() # Close the file
 # End of the program 
 
-
-
-
-<<<<<<< HEAD
-# Error Bar
-=======
->>>>>>> master
->>>>>>> master
 #import matplotlib.pyplot as plt
 #x=[200,300, 400, 500, 600, 700, 800, 900]
 #y=[1.1, 1.5, 1.9, 2.8, 3.4, 3.5, 4.6, 5.4]
@@ -72,13 +59,3 @@ thefile.close() # Close the file
 #plt.errorbar(x,y,yerr=ey, fmt='0') 
 #plt.plot([0,1000], [0, 5.5], 'k-','lw=2')
 #plt.show
-<<<<<<< HEAD
-#
-=======
-
-<<<<<<< HEAD
-###
-=======
-###
->>>>>>> master
->>>>>>> master
