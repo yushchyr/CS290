@@ -4,6 +4,10 @@ print("Liquid Resistor test")
 print("We will create a new data set for each concentration of salt.")
 print("Make sure to start the first cycle before adding any salt!")
 print("Please Begin Your Experiment by placing two Electrodes Into a Cup of a Distilled Water")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 print("\n\n")
 
 # Test scope and size settings
@@ -56,7 +60,11 @@ thefile.close() # Close the file
 
 
 
+<<<<<<< HEAD
 # Error Bar
+=======
+>>>>>>> master
+>>>>>>> master
 #import matplotlib.pyplot as plt
 #x=[200,300, 400, 500, 600, 700, 800, 900]
 #y=[1.1, 1.5, 1.9, 2.8, 3.4, 3.5, 4.6, 5.4]
@@ -64,4 +72,13 @@ thefile.close() # Close the file
 #plt.errorbar(x,y,yerr=ey, fmt='0') 
 #plt.plot([0,1000], [0, 5.5], 'k-','lw=2')
 #plt.show
+<<<<<<< HEAD
 #
+=======
+
+<<<<<<< HEAD
+###
+=======
+###
+>>>>>>> master
+>>>>>>> master
