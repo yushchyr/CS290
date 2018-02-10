@@ -8,7 +8,7 @@ print("\n\n")
 
 # Test scope and size settings
 import serial as s # Iport Serial 
-ser = s.Serial('/dev/ttyACM1') # Open Serial port
+ser = s.Serial('/dev/ttyACM0') # Open Serial port
 print("Good news!")
 print("Energia is connected at: " + ser.name) # Greating
 print("\n\n")
@@ -35,7 +35,7 @@ def scan(): # Serial sacn function prototype
     else: # In case we recieved partial or broken bit date over Serial communication port
         scan() # Go back and sick next valid data scan
 # The end of scan function
-
+#
 # Programm execution routine         
 for y in range (0, sampleTrialNumber): # Reapeat for number of trials  
     print("\n") # Prints empty space before each data trial
@@ -53,8 +53,10 @@ sampleTrialNumber = 1 # Re-set trial  counter
 thefile.close() # Close the file
 # End of the program 
 
-### Error Bar
 
+
+
+# Error Bar
 #import matplotlib.pyplot as plt
 #x=[200,300, 400, 500, 600, 700, 800, 900]
 #y=[1.1, 1.5, 1.9, 2.8, 3.4, 3.5, 4.6, 5.4]
@@ -62,5 +64,4 @@ thefile.close() # Close the file
 #plt.errorbar(x,y,yerr=ey, fmt='0') 
 #plt.plot([0,1000], [0, 5.5], 'k-','lw=2')
 #plt.show
-
-###
+#
