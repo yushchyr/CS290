@@ -74,7 +74,7 @@ for y in range (0, sampleTrialNumber): # Reapeat for number of trials
     print("Data set: " + str(dataSetIndex)) # Printing Data set nuber on a screen
     if(dataSetIndex >= 2): # Skip new line character for the first data log
         thefile.write('\n') # Write a new line character to the file named thefile
-        thefile.write("Point " + str(dataSetIndex) + ". Added salt: ")
+        thefile.write("Point " + str(dataSetIndex) + " Added salt: ")
         thefile.write(str(input("How much salt do you add? Give your answer in grams and milligrams! ")))
         thefile.write(" grams. ")
         thefile.write(" Processed data points: ")
