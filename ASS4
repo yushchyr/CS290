@@ -1,0 +1,41 @@
+print("Light is with those who believe!")
+print("Roman Yushchyk")
+print("200368308")
+
+def get_Data():
+    print("")
+    trial_Num = int(input("Eneter number of data points you collected here: "))
+    print("")
+    # Number of dimensions 2
+    myList_X = [] # Declaration of the emty list X and Y 
+    myList_Y = []
+    myList = [[],[]]
+    for i in range(0,trial_Num):
+        myList_X.append(float(input("Ennter your X value here: ")))
+    print(" ")
+    for i in range(0,trial_Num):
+        myList_Y.append(float(input("Ennter your Y value here: ")))
+    print("")
+    print("Compare your Input Data with your Notes: ")
+    print(myList_X)
+    print(myList_Y)
+    print("")
+    myList = tuple(zip(myList_X, myList_Y))
+    return myList
+def choose_Plot_Type():
+    print("Chose your plot type to star analysis of this data set: ")
+    print("Exponential = 1, Power = 2, Logarithmic = 3, Polynomial = 4")
+    user_Choice_Of_Plot_Type = int(input("Eneter your choice here: "))
+    return user_Choice_Of_Plot_Type
+def calculation():
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import math
+    n = len(myList)
+    print(n)
+def plot():
+    n = len(myList)
+# Function call list, Main Instrement Panel
+data_Set = get_Data()
+plt_Type = choose_Plot_Type()
+calculation()
